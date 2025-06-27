@@ -1,9 +1,19 @@
+import { Header, Main } from "./app.layout"
+import MainHeader from "./components/MainHeader"
 
 function App() {
 
   return (
     <>
-  <h1 className="text-red-500">Hello wosrld</h1>   
+  <Header>
+  <MainHeader/>
+  </Header>
+  <Main>
+    <div className="bg-orange-600 w-full">
+    <h1>Main Tag</h1>
+
+    </div>
+  </Main>
     </>
   )
 }
